@@ -1,0 +1,29 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="36" fill="#F6FBFC"/>
+  <rect x="24" y="24" width="1152" height="72" rx="20" fill="white"/>
+  <rect x="48" y="48" width="260" height="24" rx="12" fill="#183946"/>
+  <rect x="914" y="42" width="220" height="36" rx="18" fill="#1594A7"/>
+  <rect x="40" y="138" width="480" height="52" rx="22" fill="#FFFFFF"/>
+  <rect x="48" y="154" width="302" height="20" rx="10" fill="#183946"/>
+  <rect x="48" y="212" width="1104" height="4" rx="2" fill="#D8E5E9"/>
+  <rect x="48" y="248" width="736" height="296" rx="28" fill="#FFFFFF"/>
+  <rect x="80" y="284" width="236" height="18" rx="9" fill="#1594A7"/>
+  <rect x="80" y="332" width="212" height="28" rx="14" fill="#183946"/>
+  <rect x="80" y="382" width="636" height="16" rx="8" fill="#90AAB3"/>
+  <rect x="80" y="412" width="610" height="16" rx="8" fill="#90AAB3"/>
+  <rect x="80" y="442" width="562" height="16" rx="8" fill="#90AAB3"/>
+  <rect x="816" y="248" width="336" height="296" rx="28" fill="#FFFFFF"/>
+  <rect x="848" y="284" width="220" height="18" rx="9" fill="#1594A7"/>
+  <rect x="848" y="336" width="272" height="176" rx="22" fill="#EEF7F9"/>
+  <rect x="48" y="580" width="736" height="152" rx="28" fill="#FFFFFF"/>
+  <rect x="80" y="614" width="184" height="18" rx="9" fill="#1594A7"/>
+  <rect x="80" y="660" width="228" height="18" rx="9" fill="#183946"/>
+  <rect x="80" y="694" width="302" height="18" rx="9" fill="#90AAB3"/>
+  <rect x="434" y="648" width="122" height="34" rx="17" fill="#F4C6DF"/>
+  <rect x="434" y="694" width="122" height="34" rx="17" fill="#F4C6DF"/>
+  <rect x="602" y="660" width="82" height="18" rx="9" fill="#7BA4AE"/>
+  <rect x="602" y="694" width="82" height="18" rx="9" fill="#7BA4AE"/>
+  <rect x="48" y="760" width="1104" height="92" rx="28" fill="white"/>
+  <rect x="420" y="786" width="364" height="46" rx="23" fill="#1594A7"/>
+  <rect x="520" y="800" width="160" height="18" rx="9" fill="#FFFFFF"/>
+</svg>

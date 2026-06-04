@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dentimus — операционная система для стоматологической клиники</title>
+    <meta
+      name="description"
+      content="Единая операционная система для стоматологической клиники: коммуникации с пациентами, расписание, задачи, приём и контроль процессов в одном интерфейсе."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <a href="#top" class="brand" aria-label="Dentimus">
+            <img src="./assets/logodentimus.svg" alt="Dentimus" class="brand__logo" />
+            <span class="brand__text">Dentimus</span>
+          </a>
+          <div class="topbar__actions">
+            <a href="#modules" class="topbar__link">Возможности</a>
+            <a href="#results" class="topbar__link">Результат</a>
+            <a href="#lead-form" class="button button--ghost">Запросить демо</a>
+          </div>
+        </nav>
+
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="eyebrow">Операционная система для стоматологических клиник</div>
+            <h1>
+              Пациенты не теряются, когда коммуникации, расписание и работа команды
+              собраны в одной системе
+            </h1>
+            <p class="hero__lead">
+              Dentimus помогает удерживать текущих пациентов, снижать ручную нагрузку
+              на администраторов и держать под контролем путь пациента от обращения до приёма.
+            </p>
+            <div class="hero__cta">
+              <a href="#lead-form" class="button button--primary">Оставить заявку на демо</a>
+              <a href="#screens" class="button button--secondary">Посмотреть интерфейс</a>
+            </div>
+            <ul class="hero__bullets">
+              <li>История контактов и следующий шаг по пациенту в одном месте</li>
+              <li>Расписание и загрузка видны в общей картине</li>
+              <li>Администраторы, врачи и руководитель работают синхронно</li>
+            </ul>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero-card hero-card--stat">
+              <span>Почему именно сейчас?</span>
+              <strong>Когда привлекать новых пациентов дорого, важно не терять текущих</strong>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section--problem" id="problem">
+          <div class="section-heading">
+            <h2>Клиника теряет пациентов там, где процессы держатся на людях, а не на системе</h2>
+            <p>
+              Когда запись, звонки, задачи и расписание живут в разных местах, пациент
+              чаще выпадает из внимания, а команда тратит время на ручную координацию.
+            </p>
+          </div>
+
+          <div class="problem-grid">
+            <article class="problem-card">
+              <h3>Пациента легко упустить после первого контакта</h3>
+              <p>
+                Обращение принято, но следующий шаг не зафиксирован, подтверждение не
+                доведено до конца, а договорённость остаётся в чате или в голове
+                администратора.
+              </p>
+            </article>
+            <article class="problem-card">
+              <h3>Администраторы перегружены ручной координацией</h3>
+              <p>
+                Напоминания, переносы, уточнения, задачи после приёма и коммуникации с
+                врачами занимают слишком много внимания и создают постоянный риск ошибок.
+              </p>
+            </article>
+            <article class="problem-card">
+              <h3>По расписанию не видно, где клиника теряет загрузку и контроль</h3>
+              <p>
+                Сам календарь есть, но не видно, какие слоты под риском, где нужна
+                реакция команды, где теряется загрузка и как это связано с пациентом.
+              </p>
+            </article>
+            <article class="problem-card">
+              <h3>Руководитель узнаёт о сбое слишком поздно</h3>
+              <p>
+                Проблемы становятся заметны уже по факту: когда пациент не дошёл,
+                приём сдвинулся, информация не передалась, а команда работала без
+                общего контекста.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--solution" id="solution">
+          <div class="section-heading">
+            <h2>Коммуникации, расписание, задачи и пациент собраны в одной системе</h2>
+            <p>
+              Dentimus объединяет ключевые процессы клиники в одном интерфейсе, чтобы
+              команда работала согласованно, а руководитель быстрее видел сбои и потери.
+            </p>
+          </div>
+
+          <div class="solution-strip">
+            <div class="solution-strip__item">
+              <strong>Для руководителя</strong>
+              <span>Клиника теряет меньше пациентов и не зависит от ручного контроля</span>
+            </div>
+            <div class="solution-strip__item">
+              <strong>Для врача</strong>
+              <span>Меньше сбоев перед приёмом и больше понятного контекста по пациенту</span>
+            </div>
+            <div class="solution-strip__item">
+              <strong>Для администратора</strong>
+              <span>На 30% меньше ручной координации и пропущенных действий по пациенту</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="modules">
+          <div class="section-heading">
+            <h2>Что помогает клинике удерживать пациентов и держать процессы под контролем</h2>
+          </div>
+
+          <div class="modules-grid">
+            <article class="module-card">
+              <h3>Коммуникации с пациентами</h3>
+              <p>
+                История контактов, звонки, сообщения, напоминания и следующие шаги собраны в одном месте.
+              </p>
+            </article>
+            <article class="module-card">
+              <h3>Расписание и загрузка</h3>
+              <p>
+                По расписанию легче управлять загрузкой и быстрее реагировать на переносы и риски потери слотов.
+              </p>
+            </article>
+            <article class="module-card">
+              <h3>Всё, что нужно администратору для работы с пациентом</h3>
+              <p>
+                Задачи, статусы, договорённости и события по пациенту находятся перед глазами.
+              </p>
+            </article>
+            <article class="module-card">
+              <h3>Карточка пациента и текущий приём</h3>
+              <p>
+                Планы лечения, история, документы, оплаты и текущий визит собраны в одной системе.
+              </p>
+            </article>
+            <article class="module-card">
+              <h3>Врачи и администраторы работают без потери информации</h3>
+              <p>
+                Видно, кто отвечает за следующий шаг и где нужна реакция.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--audience" id="audience">
+          <div class="section-heading">
+            <h2>Подходит клиникам с базой от 10 000 пациентов</h2>
+          </div>
+
+          <div class="audience-grid">
+            <article class="audience-card">
+              <h3>Для собственников, которым важно не терять пациентов в большой базе</h3>
+              <p>
+                Чтобы видеть, где клиника теряет пациентов и деньги в ежедневной работе, а не узнавать об этом только по итоговым цифрам.
+              </p>
+            </article>
+            <article class="audience-card">
+              <h3>Для управляющих, которым нужно удерживать процесс без ручного контроля каждого шага</h3>
+              <p>
+                Чтобы держать в системе коммуникации, расписание, задачи и передачу информации между ролями.
+              </p>
+            </article>
+            <article class="audience-card">
+              <h3>Для коммерческих руководителей, которые отвечают за запись и доходимость</h3>
+              <p>
+                Чтобы меньше терять пациентов между первым обращением, записью, подтверждением визита и продолжением лечения.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--integrations" id="integrations">
+          <div class="section-heading">
+            <h2>Сохраняете текущую МИС, усиливаете операционные процессы</h2>
+            <p>
+              Dentimus подключается к уже работающей системе клиники и берёт на себя коммуникации, задачи, расписание и связку между ролями без полной перестройки процессов.
+            </p>
+          </div>
+
+          <div class="integration-panel">
+            <div class="integration-panel__column">
+              <h3>С чего можно начать</h3>
+              <ul>
+                <li>коммуникации с пациентами</li>
+                <li>расписание и статусы приёмов</li>
+                <li>задачи администраторам</li>
+                <li>контекст пациента и приёма</li>
+              </ul>
+            </div>
+            <div class="integration-panel__column">
+              <h3>Что клиника получает на старте</h3>
+              <ul>
+                <li>быстрый старт без тотальной перестройки процессов</li>
+                <li>понятный пилот на реальных процессах клиники</li>
+                <li>основа для дальнейшего расширения системы</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--screens" id="screens">
+          <div class="section-heading">
+            <h2>Экраны, на которых держится ежедневная работа клиники</h2>
+          </div>
+
+          <div class="screens-grid">
+            <figure class="screen-card">
+              <img src="./assets/patient-screen.svg" alt="Карточка пациента и текущий приём в Dentimus" />
+              <figcaption>
+                <strong>Карточка пациента и текущий приём</strong>
+                <span>Видно историю, план лечения, комментарии, документы и следующий шаг по пациенту.</span>
+              </figcaption>
+            </figure>
+            <figure class="screen-card">
+              <img src="./assets/schedule-screen.svg" alt="Расписание врачей и кабинетов в Dentimus" />
+              <figcaption>
+                <strong>Расписание врачей и кабинетов</strong>
+                <span>По расписанию видно загрузку клиники, занятость врачей и узкие места в записи.</span>
+              </figcaption>
+            </figure>
+            <figure class="screen-card">
+              <img src="./assets/appointment-screen.svg" alt="Текущий приём и коммуникации в Dentimus" />
+              <figcaption>
+                <strong>Текущий приём и коммуникации</strong>
+                <span>Во время визита команда видит контекст пациента, комментарии и связанные действия без лишних переключений.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section section--results" id="results">
+          <div class="section-heading">
+            <h2>Клиника меньше теряет пациентов и лучше управляет ежедневной работой</h2>
+            <p>
+              Сначала в фокусе коммуникации и запись. Дальше результат виден в цифрах.
+            </p>
+          </div>
+
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <span class="metric-card__value">-18%</span>
+              <strong>меньше потерянных обращений</strong>
+              <p>После наведения порядка в коммуникациях.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-card__value">+12%</span>
+              <strong>выше доходимость до приёма</strong>
+              <p>После контроля подтверждений и напоминаний.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-card__value">-23%</span>
+              <strong>меньше ручной работы у администраторов</strong>
+              <p>За счёт задач, статусов и единого контекста.</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric-card__value">+9 п.п.</span>
+              <strong>лучше заполнено расписание</strong>
+              <p>После более понятной работы со слотами и переносами.</p>
+            </article>
+          </div>
+
+          <div class="results-grid">
+            <article class="result-card">
+              <h3>Меньше потерянных пациентов</h3>
+              <p>Следующие шаги по пациенту не пропадают между обращением, записью, приёмом и продолжением лечения.</p>
+            </article>
+            <article class="result-card">
+              <h3>Меньше ручной нагрузки на администраторов</h3>
+              <p>Команда меньше держит в голове и быстрее ориентируется в приоритетах, договорённостях и задачах.</p>
+            </article>
+            <article class="result-card">
+              <h3>Выше управляемость расписания</h3>
+              <p>Расписание становится рабочим инструментом управления загрузкой, а не только сеткой слотов.</p>
+            </article>
+            <article class="result-card">
+              <h3>Больше прозрачности в ежедневной работе клиники</h3>
+              <p>Руководитель видит, где возникают сбои, что тормозит процесс и где нужна реакция до потери пациента.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--faq" id="faq">
+          <div class="section-heading">
+            <h2>Частые вопросы</h2>
+          </div>
+
+          <div class="faq-list">
+            <details>
+              <summary>С чего лучше начинать внедрение?</summary>
+              <p>
+                Логично начинать с коммуникаций, потому что именно здесь клиника чаще всего теряет текущих пациентов.
+              </p>
+            </details>
+            <details>
+              <summary>Сколько времени потребуется на интеграцию с МИС?</summary>
+              <p>
+                В зависимости от МИС — от двух дней до двух недель.
+              </p>
+            </details>
+            <details>
+              <summary>Для каких клиник это особенно актуально сейчас?</summary>
+              <p>
+                Для клиник, которые хотят лучше удерживать текущую базу на фоне дорогого привлечения.
+              </p>
+            </details>
+            <details>
+              <summary>Что покажете на демо?</summary>
+              <p>
+                Покажем коммуникации, расписание, текущий приём, задачи администраторов и точки контроля для руководителя.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section class="section section--form" id="lead-form">
+          <div class="lead-panel">
+            <div class="lead-panel__content">
+              <h2>Покажем, где клиника теряет пациентов и как взять эти процессы под контроль</h2>
+              <p>
+                Оставьте контакты, и мы покажем платформу на примере ваших процессов: запись, подтверждение, приём и контроль загрузки.
+              </p>
+              <ul class="lead-points">
+                <li>короткий созвон или демо без длинной презентации</li>
+                <li>разбор процессов именно вашей клиники</li>
+                <li>понятный первый этап внедрения</li>
+              </ul>
+            </div>
+
+            <form class="lead-form" id="contact-form">
+              <label>
+                Имя
+                <input type="text" name="name" placeholder="Как к вам обращаться" required />
+              </label>
+              <label>
+                Телефон
+                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="name@clinic.ru" />
+              </label>
+              <label>
+                Клиника
+                <input type="text" name="clinic" placeholder="Название клиники" required />
+              </label>
+              <label>
+                Должность
+                <select name="role" required>
+                  <option value="">Выберите роль</option>
+                  <option>Собственник</option>
+                  <option>Управляющий</option>
+                  <option>Операционный директор</option>
+                  <option>Коммерческий директор</option>
+                  <option>Другое</option>
+                </select>
+              </label>
+              <label>
+                Что хотите улучшить в первую очередь
+                <select name="priority" required>
+                  <option value="">Выберите направление</option>
+                  <option>Коммуникации с пациентами</option>
+                  <option>Работу администраторов</option>
+                  <option>Расписание и загрузку</option>
+                  <option>Контроль процессов</option>
+                  <option>Единая система для работы команды</option>
+                </select>
+              </label>
+              <button type="submit" class="button button--primary button--full">
+                Запросить демо
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
