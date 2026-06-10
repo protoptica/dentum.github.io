@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dentimus — операционная система для стоматологической клиники</title>
+    <title>Dentimus: рост активной базы клиники</title>
     <meta
       name="description"
-      content="Единая операционная система для стоматологической клиники: коммуникации с пациентами, расписание, задачи, приём и контроль процессов в одном интерфейсе."
+      content="Dentimus помогает стоматологическим клиникам снижать потери на каждом этапе пациентской воронки и растить активную базу."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,405 +17,690 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
+    <div class="landing-shell">
+      <header class="site-header">
         <nav class="topbar">
           <a href="#top" class="brand" aria-label="Dentimus">
             <img src="./assets/logodentimus.svg" alt="Dentimus" class="brand__logo" />
             <span class="brand__text">Dentimus</span>
           </a>
+
+          <div class="topbar__nav">
+            <a href="#solution">Решение</a>
+            <a href="#capabilities">Возможности</a>
+            <a href="#integrations">Интеграции</a>
+            <a href="#results">Результаты</a>
+            <a href="#faq">FAQ</a>
+          </div>
+
           <div class="topbar__actions">
-            <a href="#modules" class="topbar__link">Возможности</a>
-            <a href="#results" class="topbar__link">Результат</a>
-            <a href="#lead-form" class="button button--ghost">Запросить демо</a>
+            <a href="#lead-form" class="button button--outline">Разобрать воронку</a>
           </div>
         </nav>
 
-        <div class="hero__grid">
-          <div class="hero__content">
-            <div class="eyebrow">Операционная система для стоматологических клиник</div>
+        <section class="hero" id="top">
+          <div class="hero__copy">
+            <p class="section-kicker">Платформа для роста активной базы</p>
             <h1>
-              Пациенты не теряются, когда коммуникации, расписание и работа команды
-              собраны в одной системе
+              Управляйте <span class="hero-mark hero-mark--growth">ростом</span>
+              активной базы, а не <span class="hero-mark hero-mark--risk">последствиями</span>
+              потерь
             </h1>
             <p class="hero__lead">
-              Dentimus помогает удерживать текущих пациентов, снижать ручную нагрузку
-              на администраторов и держать под контролем путь пациента от обращения до приёма.
+              Dentimus показывает, где пациенты выпадают из воронки, ставит задачи
+              команде и автоматизирует коммуникации. Руководитель видит активную
+              базу, отток, повторные визиты и загрузку клиники в одном месте.
             </p>
-            <div class="hero__cta">
-              <a href="#lead-form" class="button button--primary">Оставить заявку на демо</a>
-              <a href="#screens" class="button button--secondary">Посмотреть интерфейс</a>
+
+            <div class="hero__actions">
+              <a href="#lead-form" class="button button--primary">Разобрать воронку клиники</a>
             </div>
-            <ul class="hero__bullets">
-              <li>История контактов и следующий шаг по пациенту в одном месте</li>
-              <li>Расписание и загрузка видны в общей картине</li>
-              <li>Администраторы, врачи и руководитель работают синхронно</li>
-            </ul>
+
+            <div class="hero__proof">
+              <span class="hero__proof-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2 4 5v6c0 5.1 3.4 9.9 8 11 4.6-1.1 8-5.9 8-11V5l-8-3Z"
+                    fill="currentColor"
+                    opacity=".18"
+                  />
+                  <path
+                    d="M12 2 4 5v6c0 5.1 3.4 9.9 8 11 4.6-1.1 8-5.9 8-11V5l-8-3Zm-1.1 13.8-3-3 1.5-1.5 1.5 1.6 4.6-4.7 1.5 1.5-6.1 6.1Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <p>250+ клиник используют Dentimus для контроля базы, визитов и коммуникаций</p>
+            </div>
           </div>
 
-          <div class="hero__visual">
-            <div class="hero-card hero-card--stat">
-              <span>Почему именно сейчас?</span>
-              <strong>Когда привлекать новых пациентов дорого, важно не терять текущих</strong>
-            </div>
+          <div class="hero__diagram" aria-label="Схема роста активной базы">
+            <img
+              class="diagram diagram--asset"
+              src="./assets/dentimus_infographic.svg"
+              alt="Dentimus подхватывает пациентов на этапах от обращения до повторного визита и помогает растить активную базу"
+            />
           </div>
-        </div>
+        </section>
       </header>
 
       <main>
-        <section class="section section--problem" id="problem">
-          <div class="section-heading">
-            <h2>Клиника теряет пациентов там, где процессы держатся на людях, а не на системе</h2>
-            <p>
-              Когда запись, звонки, задачи и расписание живут в разных местах, пациент
-              чаще выпадает из внимания, а команда тратит время на ручную координацию.
-            </p>
-          </div>
+        <section class="proof-strip" aria-label="Ключевые эффекты">
+          <article class="proof-strip__item">
+            <span class="proof-strip__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 3h10v4H7zM6 9h12v12H6zM10 13h4v2h-4zm0 4h4v2h-4zM8 5h8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <p>Находим пациентов, которые застряли без следующего шага</p>
+          </article>
 
-          <div class="problem-grid">
-            <article class="problem-card">
-              <h3>Пациента легко упустить после первого контакта</h3>
-              <p>
-                Обращение принято, но следующий шаг не зафиксирован, подтверждение не
-                доведено до конца, а договорённость остаётся в чате или в голове
-                администратора.
-              </p>
-            </article>
-            <article class="problem-card">
-              <h3>Администраторы перегружены ручной координацией</h3>
-              <p>
-                Напоминания, переносы, уточнения, задачи после приёма и коммуникации с
-                врачами занимают слишком много внимания и создают постоянный риск ошибок.
-              </p>
-            </article>
-            <article class="problem-card">
-              <h3>По расписанию не видно, где клиника теряет загрузку и контроль</h3>
-              <p>
-                Сам календарь есть, но не видно, какие слоты под риском, где нужна
-                реакция команды, где теряется загрузка и как это связано с пациентом.
-              </p>
-            </article>
-            <article class="problem-card">
-              <h3>Руководитель узнаёт о сбое слишком поздно</h3>
-              <p>
-                Проблемы становятся заметны уже по факту: когда пациент не дошёл,
-                приём сдвинулся, информация не передалась, а команда работала без
-                общего контекста.
-              </p>
-            </article>
-          </div>
+          <article class="proof-strip__item">
+            <span class="proof-strip__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 7h16v10H4zM8 17v2M16 17v2M7 11h5M7 14h8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <p>Ставим задачи администраторам и врачам автоматически</p>
+          </article>
+
+          <article class="proof-strip__item">
+            <span class="proof-strip__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 4a5 5 0 0 1 5 5c0 3.2-2.6 5.8-5.8 5.8H8m4-10v3h3M7 20a4 4 0 0 1 0-8h2m6 0h2a4 4 0 0 1 0 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <p>Возвращаем пациентов на повторные визиты и профилактику</p>
+          </article>
+
+          <article class="proof-strip__item">
+            <span class="proof-strip__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M5 16V9M10 16V6M15 16v-4M20 16V8M3 19h18"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <p>Показываем базу, отток, загрузку и выручку по клинике</p>
+          </article>
         </section>
 
-        <section class="section section--solution" id="solution">
+        <section class="product-proof section" id="solution">
           <div class="section-heading">
-            <h2>Коммуникации, расписание, задачи и пациент собраны в одной системе</h2>
-            <p>
-              Dentimus объединяет ключевые процессы клиники в одном интерфейсе, чтобы
-              команда работала согласованно, а руководитель быстрее видел сбои и потери.
-            </p>
+            <p class="section-kicker">Контроль пациентской базы</p>
+            <h2>Видите путь пациента от заявки до повторного визита</h2>
           </div>
 
-          <div class="solution-strip">
-            <div class="solution-strip__item">
-              <strong>Для руководителя</strong>
-              <span>Клиника теряет меньше пациентов и не зависит от ручного контроля</span>
-            </div>
-            <div class="solution-strip__item">
-              <strong>Для врача</strong>
-              <span>Меньше сбоев перед приёмом и больше понятного контекста по пациенту</span>
-            </div>
-            <div class="solution-strip__item">
-              <strong>Для администратора</strong>
-              <span>На 30% меньше ручной координации и пропущенных действий по пациенту</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="modules">
-          <div class="section-heading">
-            <h2>Что помогает клинике удерживать пациентов и держать процессы под контролем</h2>
-          </div>
-
-          <div class="modules-grid">
-            <article class="module-card">
-              <h3>Коммуникации с пациентами</h3>
-              <p>
-                История контактов, звонки, сообщения, напоминания и следующие шаги собраны в одном месте.
-              </p>
-            </article>
-            <article class="module-card">
-              <h3>Расписание и загрузка</h3>
-              <p>
-                По расписанию легче управлять загрузкой и быстрее реагировать на переносы и риски потери слотов.
-              </p>
-            </article>
-            <article class="module-card">
-              <h3>Всё, что нужно администратору для работы с пациентом</h3>
-              <p>
-                Задачи, статусы, договорённости и события по пациенту находятся перед глазами.
-              </p>
-            </article>
-            <article class="module-card">
-              <h3>Карточка пациента и текущий приём</h3>
-              <p>
-                Планы лечения, история, документы, оплаты и текущий визит собраны в одной системе.
-              </p>
-            </article>
-            <article class="module-card">
-              <h3>Врачи и администраторы работают без потери информации</h3>
-              <p>
-                Видно, кто отвечает за следующий шаг и где нужна реакция.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section section--audience" id="audience">
-          <div class="section-heading">
-            <h2>Подходит клиникам с базой от 10 000 пациентов</h2>
-          </div>
-
-          <div class="audience-grid">
-            <article class="audience-card">
-              <h3>Для собственников, которым важно не терять пациентов в большой базе</h3>
-              <p>
-                Чтобы видеть, где клиника теряет пациентов и деньги в ежедневной работе, а не узнавать об этом только по итоговым цифрам.
-              </p>
-            </article>
-            <article class="audience-card">
-              <h3>Для управляющих, которым нужно удерживать процесс без ручного контроля каждого шага</h3>
-              <p>
-                Чтобы держать в системе коммуникации, расписание, задачи и передачу информации между ролями.
-              </p>
-            </article>
-            <article class="audience-card">
-              <h3>Для коммерческих руководителей, которые отвечают за запись и доходимость</h3>
-              <p>
-                Чтобы меньше терять пациентов между первым обращением, записью, подтверждением визита и продолжением лечения.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section section--integrations" id="integrations">
-          <div class="section-heading">
-            <h2>Сохраняете текущую МИС, усиливаете операционные процессы</h2>
-            <p>
-              Dentimus подключается к уже работающей системе клиники и берёт на себя коммуникации, задачи, расписание и связку между ролями без полной перестройки процессов.
-            </p>
-          </div>
-
-          <div class="integration-panel">
-            <div class="integration-panel__column">
-              <h3>С чего можно начать</h3>
-              <ul>
-                <li>коммуникации с пациентами</li>
-                <li>расписание и статусы приёмов</li>
-                <li>задачи администраторам</li>
-                <li>контекст пациента и приёма</li>
-              </ul>
-            </div>
-            <div class="integration-panel__column">
-              <h3>Что клиника получает на старте</h3>
-              <ul>
-                <li>быстрый старт без тотальной перестройки процессов</li>
-                <li>понятный пилот на реальных процессах клиники</li>
-                <li>основа для дальнейшего расширения системы</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--screens" id="screens">
-          <div class="section-heading">
-            <h2>Экраны, на которых держится ежедневная работа клиники</h2>
-          </div>
-
-          <div class="screens-grid">
-            <figure class="screen-card">
-              <img src="./assets/patient-screen.svg" alt="Карточка пациента и текущий приём в Dentimus" />
+          <div class="product-proof__grid">
+            <figure class="product-card">
               <figcaption>
-                <strong>Карточка пациента и текущий приём</strong>
-                <span>Видно историю, план лечения, комментарии, документы и следующий шаг по пациенту.</span>
+                <span>Расписание</span>
+                <strong>Загрузка врачей и кабинетов</strong>
               </figcaption>
-            </figure>
-            <figure class="screen-card">
-              <img src="./assets/schedule-screen.svg" alt="Расписание врачей и кабинетов в Dentimus" />
-              <figcaption>
-                <strong>Расписание врачей и кабинетов</strong>
-                <span>По расписанию видно загрузку клиники, занятость врачей и узкие места в записи.</span>
-              </figcaption>
-            </figure>
-            <figure class="screen-card">
-              <img src="./assets/appointment-screen.svg" alt="Текущий приём и коммуникации в Dentimus" />
-              <figcaption>
-                <strong>Текущий приём и коммуникации</strong>
-                <span>Во время визита команда видит контекст пациента, комментарии и связанные действия без лишних переключений.</span>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="section section--results" id="results">
-          <div class="section-heading">
-            <h2>Клиника меньше теряет пациентов и лучше управляет ежедневной работой</h2>
-            <p>
-              Сначала в фокусе коммуникации и запись. Дальше результат виден в цифрах.
-            </p>
-          </div>
-
-          <div class="metrics-grid">
-            <article class="metric-card">
-              <span class="metric-card__value">-18%</span>
-              <strong>меньше потерянных обращений</strong>
-              <p>После наведения порядка в коммуникациях.</p>
-            </article>
-            <article class="metric-card">
-              <span class="metric-card__value">+12%</span>
-              <strong>выше доходимость до приёма</strong>
-              <p>После контроля подтверждений и напоминаний.</p>
-            </article>
-            <article class="metric-card">
-              <span class="metric-card__value">-23%</span>
-              <strong>меньше ручной работы у администраторов</strong>
-              <p>За счёт задач, статусов и единого контекста.</p>
-            </article>
-            <article class="metric-card">
-              <span class="metric-card__value">+9 п.п.</span>
-              <strong>лучше заполнено расписание</strong>
-              <p>После более понятной работы со слотами и переносами.</p>
-            </article>
-          </div>
-
-          <div class="results-grid">
-            <article class="result-card">
-              <h3>Меньше потерянных пациентов</h3>
-              <p>Следующие шаги по пациенту не пропадают между обращением, записью, приёмом и продолжением лечения.</p>
-            </article>
-            <article class="result-card">
-              <h3>Меньше ручной нагрузки на администраторов</h3>
-              <p>Команда меньше держит в голове и быстрее ориентируется в приоритетах, договорённостях и задачах.</p>
-            </article>
-            <article class="result-card">
-              <h3>Выше управляемость расписания</h3>
-              <p>Расписание становится рабочим инструментом управления загрузкой, а не только сеткой слотов.</p>
-            </article>
-            <article class="result-card">
-              <h3>Больше прозрачности в ежедневной работе клиники</h3>
-              <p>Руководитель видит, где возникают сбои, что тормозит процесс и где нужна реакция до потери пациента.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section section--faq" id="faq">
-          <div class="section-heading">
-            <h2>Частые вопросы</h2>
-          </div>
-
-          <div class="faq-list">
-            <details>
-              <summary>С чего лучше начинать внедрение?</summary>
-              <p>
-                Логично начинать с коммуникаций, потому что именно здесь клиника чаще всего теряет текущих пациентов.
-              </p>
-            </details>
-            <details>
-              <summary>Сколько времени потребуется на интеграцию с МИС?</summary>
-              <p>
-                В зависимости от МИС — от двух дней до двух недель.
-              </p>
-            </details>
-            <details>
-              <summary>Для каких клиник это особенно актуально сейчас?</summary>
-              <p>
-                Для клиник, которые хотят лучше удерживать текущую базу на фоне дорогого привлечения.
-              </p>
-            </details>
-            <details>
-              <summary>Что покажете на демо?</summary>
-              <p>
-                Покажем коммуникации, расписание, текущий приём, задачи администраторов и точки контроля для руководителя.
-              </p>
-            </details>
-          </div>
-        </section>
-
-        <section class="section section--form" id="lead-form">
-          <div class="lead-panel">
-            <div class="lead-panel__content">
-              <h2>Покажем, где клиника теряет пациентов и как взять эти процессы под контроль</h2>
-              <p>
-                Оставьте контакты, и мы покажем платформу на примере ваших процессов: запись, подтверждение, приём и контроль загрузки.
-              </p>
-              <ul class="lead-points">
-                <li>короткий созвон или демо без длинной презентации</li>
-                <li>разбор процессов именно вашей клиники</li>
-                <li>понятный первый этап внедрения</li>
-              </ul>
-            </div>
-
-            <form class="lead-form" id="contact-form">
-              <label>
-                Имя
-                <input type="text" name="name" placeholder="Как к вам обращаться" required />
-              </label>
-              <label>
-                Телефон
-                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" placeholder="name@clinic.ru" />
-              </label>
-              <label>
-                Клиника
-                <input type="text" name="clinic" placeholder="Название клиники" required />
-              </label>
-              <label>
-                Должность
-                <select name="role" required>
-                  <option value="">Выберите роль</option>
-                  <option>Собственник</option>
-                  <option>Управляющий</option>
-                  <option>Операционный директор</option>
-                  <option>Коммерческий директор</option>
-                  <option>Другое</option>
-                </select>
-              </label>
-              <label>
-                Что хотите улучшить в первую очередь
-                <select name="priority" required>
-                  <option value="">Выберите направление</option>
-                  <option>Коммуникации с пациентами</option>
-                  <option>Работу администраторов</option>
-                  <option>Расписание и загрузку</option>
-                  <option>Контроль процессов</option>
-                  <option>Единая система для работы команды</option>
-                </select>
-              </label>
-              <label class="consent-field">
-                <input type="checkbox" name="privacy_consent" required />
-                <span>
-                  Нажимая кнопку, я принимаю
-                  <a href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">
-                    Политику обработки персональных данных
-                  </a>
-                  и даю
-                  <a href="./consent-to-processing.html" target="_blank" rel="noopener noreferrer">
-                    согласие на обработку персональных данных
-                  </a>
-                  для ответа на заявку.
-                </span>
-              </label>
-              <button type="submit" class="button button--primary button--full">
-                Запросить демо
+              <button
+                class="product-card__zoom"
+                type="button"
+                data-full="./assets/schedule-screen.svg"
+                data-caption="Расписание: загрузка врачей и кабинетов"
+                aria-label="Увеличить экран расписания"
+              >
+                <img
+                  src="./assets/schedule-screen.svg"
+                  alt="Расписание врачей и кабинетов в Dentimus"
+                />
               </button>
-            </form>
+            </figure>
+
+            <figure class="product-card">
+              <figcaption>
+                <span>Коммуникации</span>
+                <strong>Очередь ответов и следующие действия</strong>
+              </figcaption>
+              <button
+                class="product-card__zoom"
+                type="button"
+                data-full="./assets/communications-preview.svg"
+                data-caption="Коммуникации: очередь ответов и следующие действия"
+                aria-label="Увеличить экран коммуникаций"
+              >
+                <img
+                  src="./assets/communications-preview.svg"
+                  alt="Коммуникации и диалоги с пациентами в Dentimus"
+                />
+              </button>
+            </figure>
+
+            <figure class="product-card">
+              <figcaption>
+                <span>Карточка пациента</span>
+                <strong>Контекст лечения и следующий шаг</strong>
+              </figcaption>
+              <button
+                class="product-card__zoom"
+                type="button"
+                data-full="./assets/patient-screen.svg"
+                data-caption="Карточка пациента: контекст лечения и следующий шаг"
+                aria-label="Увеличить карточку пациента"
+              >
+                <img
+                  src="./assets/patient-screen.svg"
+                  alt="Карточка пациента в Dentimus"
+                />
+              </button>
+            </figure>
+          </div>
+        </section>
+
+        <section class="capabilities section" id="capabilities">
+          <div class="section-heading">
+            <p class="section-kicker">Что делает Dentimus</p>
+            <h2>Закрывает места, где клиника теряет пациентов и время</h2>
+          </div>
+
+          <div class="capabilities__grid">
+            <article class="capability">
+              <span class="capability__icon">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path
+                    d="M5 6h22l-8.4 9.6v6.2l-5.2 4.2v-10.4L5 6Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5 10h13M13 15h6M15 20h2.8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.1"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Воронка пациентов</h3>
+              <p>Заявки, первичные приёмы, планы лечения, оплаты и повторы в одной логике контроля.</p>
+            </article>
+
+            <article class="capability">
+              <span class="capability__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M5 7h14v8H5zM8 17h8M12 7v8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Коммуникации без ручного контроля</h3>
+              <p>Напоминания, возвраты и триггеры запускаются по статусу пациента, а не по памяти администратора.</p>
+            </article>
+
+            <article class="capability">
+              <span class="capability__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 4v3M18 4v3M4.5 8h15M5 6h14a1.5 1.5 0 0 1 1.5 1.5v11A1.5 1.5 0 0 1 19 20H5a1.5 1.5 0 0 1-1.5-1.5v-11A1.5 1.5 0 0 1 5 6Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.5 12h3.5M13 12h3.5M7.5 16h7"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Загрузка врачей и кабинетов</h3>
+              <p>Расписание видно вместе с пациентским потоком, простоями и незакрытыми задачами.</p>
+            </article>
+
+            <article class="capability">
+              <span class="capability__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8 8a4 4 0 1 1 8 0c0 5-4 4-4 8M12 20h.01"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <h3>Удержание и возврат</h3>
+              <p>Система выделяет пациентов без следующего визита и запускает сценарии возврата.</p>
+            </article>
+
+            <article class="capability">
+              <span class="capability__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M5 18V9M11 18V6M17 18v-3M3 20h18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Управленческая аналитика</h3>
+              <p>Активная база, отток, повторные визиты, загрузка и деньги доступны без ручной сборки отчётов.</p>
+            </article>
+
+            <article class="capability">
+              <span class="capability__icon">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path
+                    d="M11 25V7h8a5.4 5.4 0 0 1 0 10.8h-8M7 17.8h13M7 22h10"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <h3>Финансы по пациентам</h3>
+              <p>Контроль выручки, планов лечения и долга по пациентской базе.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="results-band" id="results">
+          <div class="results-band__inner">
+            <div class="results-band__heading">
+              <p class="section-kicker section-kicker--dark">Что меняется в клинике</p>
+            </div>
+
+            <div class="results-band__metrics">
+              <article class="result-stat">
+                <strong>+28%</strong>
+                <p>средний рост активной базы за 6 месяцев</p>
+              </article>
+              <article class="result-stat">
+                <strong>-34%</strong>
+                <p>меньше пациентов без следующего шага</p>
+              </article>
+              <article class="result-stat">
+                <strong>+21%</strong>
+                <p>больше повторных визитов</p>
+              </article>
+              <article class="result-stat">
+                <strong>+18%</strong>
+                <p>выше выручка на активного пациента</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="integrations section" id="integrations">
+          <div class="section-heading">
+            <p class="section-kicker">Интеграции</p>
+            <h2>Подключается к текущим системам клиники</h2>
+          </div>
+
+          <div class="integrations__row" aria-label="Примеры интеграций">
+            <div class="integration-logo integration-logo--image">
+              <img src="./assets/ident-logo.svg" alt="IDENT" />
+              <span>IDENT</span>
+            </div>
+            <div class="integration-logo">
+              <strong>1C</strong>
+              <span>1С:Медицина</span>
+            </div>
+            <div class="integration-logo">
+              <strong>UIS</strong>
+              <span>Dental</span>
+            </div>
+            <div class="integration-logo">
+              <strong>albato</strong>
+              <span>Albato</span>
+            </div>
+            <div class="integration-logo integration-logo--muted">
+              <strong>и другие</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="lead-section section" id="lead-form">
+          <div class="lead-section__copy">
+            <p class="section-kicker">Демо по вашей клинике</p>
+            <h2>Разберём, где теряются пациенты и ручное время</h2>
+            <p>
+              На встрече покажем, какие этапы воронки можно контролировать в
+              Dentimus, какие коммуникации автоматизировать и какие метрики
+              руководитель будет видеть каждый день.
+            </p>
+          </div>
+
+          <form class="lead-form" novalidate>
+            <div class="lead-form__grid">
+              <label class="field">
+                <span>Ваше имя</span>
+                <input type="text" name="name" placeholder="Иван Петров" autocomplete="name" required />
+                <small class="field__error" data-error-for="name" aria-live="polite"></small>
+              </label>
+              <label class="field">
+                <span>Телефон</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+7 (___) ___-__-__"
+                  autocomplete="tel"
+                  inputmode="numeric"
+                  maxlength="18"
+                  aria-describedby="phone-error"
+                  required
+                />
+                <small class="field__error" id="phone-error" data-error-for="phone" aria-live="polite"></small>
+              </label>
+              <label class="field">
+                <span>Название клиники</span>
+                <input type="text" name="clinic" placeholder="Название клиники" autocomplete="organization" required />
+                <small class="field__error" data-error-for="clinic" aria-live="polite"></small>
+              </label>
+              <label class="field">
+                <span>E-mail</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="name@clinic.ru"
+                  autocomplete="email"
+                  aria-describedby="email-error"
+                  required
+                />
+                <small class="field__error" id="email-error" data-error-for="email" aria-live="polite"></small>
+              </label>
+            </div>
+
+            <div class="lead-form__footer">
+              <button type="submit" class="button button--primary button--wide">
+                Получить разбор
+              </button>
+
+              <p class="lead-form__note">
+                Мы не передаём ваши данные третьим лицам.
+                <a href="./privacy-policy.html">Политика конфиденциальности</a>.
+              </p>
+            </div>
+          </form>
+        </section>
+
+        <section class="faq section" id="faq">
+          <div class="section-heading">
+            <p class="section-kicker">Вопросы</p>
+            <h2>Что обычно уточняют перед запуском</h2>
+          </div>
+
+          <div class="faq__grid">
+            <div class="faq__column">
+              <details>
+                <summary>Когда клиника начнёт работать в Dentimus?</summary>
+                <p>Первый рабочий контур запускается за 2-6 недель. Срок зависит от интеграций, данных и числа процессов.</p>
+              </details>
+              <details>
+                <summary>Нужна ли интеграция с нашей МИС?</summary>
+                <p>Да, если нужно работать с текущими данными и не переносить информацию вручную. Состав интеграций уточняем на старте.</p>
+              </details>
+              <details>
+                <summary>Кто увидит данные пациентов и отчёты?</summary>
+                <p>Доступы, роли и логи действий настраиваются под структуру клиники. Руководители и сотрудники видят только нужные разделы.</p>
+              </details>
+            </div>
+
+            <div class="faq__column">
+              <details>
+                <summary>Можно ли настроить воронку под наши процессы?</summary>
+                <p>Да. При запуске фиксируем этапы пути пациента, роли, задачи, триггеры коммуникаций и правила контроля.</p>
+              </details>
+              <details>
+                <summary>Кто обучит администраторов и руководителей?</summary>
+                <p>Команду обучают при запуске. В первые недели сопровождаем работу, собираем вопросы и корректируем настройки.</p>
+              </details>
+              <details>
+                <summary>Как рассчитывается стоимость?</summary>
+                <p>Стоимость зависит от числа пользователей, контуров автоматизации и интеграций. Тариф считаем после короткого разбора клиники.</p>
+              </details>
+            </div>
           </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <div class="footer__brand">
+          <div class="brand brand--footer">
+            <img src="./assets/logodentimus.svg" alt="Dentimus" class="brand__logo" />
+            <span class="brand__text">Dentimus</span>
+          </div>
+          <p>Платформа управления ростом для стоматологических клиник</p>
+          <small>© 2025 Dentimus. Все права защищены.</small>
+        </div>
+
+        <div class="footer__columns">
+          <div>
+            <span>Продукт</span>
+            <a href="#solution">Решение</a>
+            <a href="#capabilities">Возможности</a>
+            <a href="#integrations">Интеграции</a>
+            <a href="#results">Результаты</a>
+          </div>
+          <div>
+            <span>Компания</span>
+            <a href="#faq">FAQ</a>
+            <a href="#lead-form">Контакты</a>
+            <a href="./privacy-policy.html">Политика</a>
+            <a href="./consent-to-processing.html">Согласие</a>
+          </div>
+          <div class="footer__contacts">
+            <span>Контакты</span>
+            <a href="mailto:info@dentimus.io">info@dentimus.io</a>
+            <a href="tel:+74951202525">+7 (495) 120-25-25</a>
+            <div class="footer__socials" aria-label="Соцсети">
+              <a href="#" aria-label="Telegram">Tg</a>
+              <a href="#" aria-label="VK">Vk</a>
+              <a href="#" aria-label="LinkedIn">In</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
-    <script src="./script.js"></script>
+    <dialog class="image-viewer" id="image-viewer" aria-labelledby="image-viewer-title">
+      <div class="image-viewer__panel">
+        <div class="image-viewer__header">
+          <h2 id="image-viewer-title">Экран Dentimus</h2>
+          <button class="image-viewer__close" type="button" aria-label="Закрыть увеличенное изображение">
+            Закрыть
+          </button>
+        </div>
+        <img class="image-viewer__image" src="" alt="" />
+      </div>
+    </dialog>
+
+    <script>
+      const leadForm = document.querySelector(".lead-form");
+      const phoneInput = leadForm?.querySelector('input[name="phone"]');
+      const emailInput = leadForm?.querySelector('input[name="email"]');
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+      const setFieldError = (input, message) => {
+        if (!input) return;
+
+        const error = leadForm?.querySelector(`[data-error-for="${input.name}"]`);
+        input.setAttribute("aria-invalid", message ? "true" : "false");
+        input.setCustomValidity(message);
+        if (error) error.textContent = message;
+      };
+
+      const getPhoneDigits = (value) => value.replace(/\D/g, "");
+
+      const normalizePhoneDigits = (value, shouldLimit = true) => {
+        let digits = getPhoneDigits(value);
+
+        if (digits.startsWith("8")) digits = `7${digits.slice(1)}`;
+        if (!digits.startsWith("7")) digits = `7${digits}`;
+
+        return shouldLimit ? digits.slice(0, 11) : digits;
+      };
+
+      const formatRuPhone = (value) => {
+        const digits = normalizePhoneDigits(value);
+        const local = digits.slice(1);
+        const partA = local.slice(0, 3);
+        const partB = local.slice(3, 6);
+        const partC = local.slice(6, 8);
+        const partD = local.slice(8, 10);
+
+        let formatted = "+7";
+        if (partA) formatted += ` (${partA}`;
+        if (partA.length === 3) formatted += ")";
+        if (partB) formatted += ` ${partB}`;
+        if (partC) formatted += `-${partC}`;
+        if (partD) formatted += `-${partD}`;
+
+        return formatted;
+      };
+
+      const validatePhone = () => {
+        if (!phoneInput) return true;
+
+        const rawDigits = normalizePhoneDigits(phoneInput.value, false);
+        const digits = normalizePhoneDigits(phoneInput.value);
+        phoneInput.value = formatRuPhone(digits);
+
+        if (rawDigits.length > 11 || phoneInput.dataset.tooLong === "true") {
+          setFieldError(phoneInput, "В номере должно быть 10 цифр после +7.");
+          return false;
+        }
+
+        if (digits.length !== 11) {
+          setFieldError(phoneInput, "Введите 10 цифр номера после +7.");
+          return false;
+        }
+
+        setFieldError(phoneInput, "");
+        return true;
+      };
+
+      const validateEmail = () => {
+        if (!emailInput) return true;
+
+        const value = emailInput.value.trim();
+        emailInput.value = value;
+
+        if (!value) {
+          setFieldError(emailInput, "Введите e-mail.");
+          return false;
+        }
+
+        if (!emailPattern.test(value)) {
+          setFieldError(emailInput, "Введите корректный e-mail.");
+          return false;
+        }
+
+        setFieldError(emailInput, "");
+        return true;
+      };
+
+      leadForm?.querySelectorAll("input[required]").forEach((input) => {
+        input.addEventListener("input", () => {
+          if (input.name === "phone") return;
+          setFieldError(input, input.value.trim() ? "" : "Заполните поле.");
+        });
+      });
+
+      phoneInput?.addEventListener("focus", () => {
+        if (!phoneInput.value.trim()) phoneInput.value = "+7 ";
+      });
+
+      phoneInput?.addEventListener("input", () => {
+        const rawDigitsCount = normalizePhoneDigits(phoneInput.value, false).length;
+        phoneInput.dataset.tooLong = rawDigitsCount > 11 ? "true" : "false";
+        phoneInput.value = formatRuPhone(phoneInput.value);
+        const digitsCount = normalizePhoneDigits(phoneInput.value, false).length;
+        if (digitsCount >= 11) validatePhone();
+        if (digitsCount < 11) setFieldError(phoneInput, "");
+      });
+
+      phoneInput?.addEventListener("blur", validatePhone);
+      emailInput?.addEventListener("blur", validateEmail);
+      emailInput?.addEventListener("input", () => {
+        if (emailInput.value.trim()) validateEmail();
+      });
+
+      leadForm?.addEventListener("submit", (event) => {
+        const requiredFieldsValid = Array.from(leadForm.querySelectorAll("input[required]")).map((input) => {
+          const isValid = Boolean(input.value.trim());
+          setFieldError(input, isValid ? "" : "Заполните поле.");
+          return isValid;
+        }).every(Boolean);
+        const phoneValid = validatePhone();
+        const emailValid = validateEmail();
+
+        if (!requiredFieldsValid || !phoneValid || !emailValid) {
+          event.preventDefault();
+          leadForm.reportValidity();
+          return;
+        }
+
+        event.preventDefault();
+      });
+
+      const viewer = document.querySelector("#image-viewer");
+      const viewerImage = viewer?.querySelector(".image-viewer__image");
+      const viewerTitle = viewer?.querySelector("#image-viewer-title");
+      const closeViewer = viewer?.querySelector(".image-viewer__close");
+
+      document.querySelectorAll(".product-card__zoom").forEach((button) => {
+        button.addEventListener("click", () => {
+          if (!viewer || !viewerImage || !viewerTitle) return;
+
+          const src = button.dataset.full || "";
+          const caption = button.dataset.caption || "Экран Dentimus";
+          viewerImage.src = src;
+          viewerImage.alt = caption;
+          viewerTitle.textContent = caption;
+          viewer.showModal();
+        });
+      });
+
+      closeViewer?.addEventListener("click", () => viewer?.close());
+      viewer?.addEventListener("click", (event) => {
+        if (event.target === viewer) viewer.close();
+      });
+    </script>
   </body>
 </html>

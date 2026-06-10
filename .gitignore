@@ -1,2 +1,9 @@
 .DS_Store
-
+node_modules/
+.codex/
+.impeccable/
+outputs/
+PRODUCT.md
+DESIGN.md
+unit-economics-first-pass.md
+build_unit_economics_model.mjs
