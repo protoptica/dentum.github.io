@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -55,31 +56,22 @@
             <div class="hero__actions">
               <a href="#lead-form" class="button button--primary">Разобрать воронку клиники</a>
             </div>
-
-            <div class="hero__proof">
-              <span class="hero__proof-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 2 4 5v6c0 5.1 3.4 9.9 8 11 4.6-1.1 8-5.9 8-11V5l-8-3Z"
-                    fill="currentColor"
-                    opacity=".18"
-                  />
-                  <path
-                    d="M12 2 4 5v6c0 5.1 3.4 9.9 8 11 4.6-1.1 8-5.9 8-11V5l-8-3Zm-1.1 13.8-3-3 1.5-1.5 1.5 1.6 4.6-4.7 1.5 1.5-6.1 6.1Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </span>
-              <p>100+ клиник используют Dentimus для контроля базы, визитов и коммуникаций</p>
-            </div>
           </div>
 
           <div class="hero__diagram" aria-label="Схема роста активной базы">
-            <img
-              class="diagram diagram--asset"
-              src="./assets/dentimus_infographic.svg"
-              alt="Dentimus подхватывает пациентов на этапах от обращения до повторного визита и помогает растить активную базу"
-            />
+            <button
+              class="hero__diagram-zoom"
+              type="button"
+              data-full="./assets/dentimus_infographic.svg"
+              data-caption="Схема роста активной базы"
+              aria-label="Увеличить схему роста активной базы"
+            >
+              <img
+                class="diagram diagram--asset"
+                src="./assets/dentimus_infographic.svg"
+                alt="Dentimus подхватывает пациентов на этапах от обращения до повторного визита и помогает растить активную базу"
+              />
+            </button>
           </div>
         </section>
       </header>
@@ -684,7 +676,7 @@
       const viewerTitle = viewer?.querySelector("#image-viewer-title");
       const closeViewer = viewer?.querySelector(".image-viewer__close");
 
-      document.querySelectorAll(".product-card__zoom").forEach((button) => {
+      document.querySelectorAll(".product-card__zoom, .hero__diagram-zoom").forEach((button) => {
         button.addEventListener("click", () => {
           if (!viewer || !viewerImage || !viewerTitle) return;
 

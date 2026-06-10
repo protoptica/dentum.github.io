@@ -180,10 +180,10 @@ input {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(500px, 1.08fr);
-  gap: clamp(34px, 5vw, 68px);
-  align-items: start;
-  padding: clamp(36px, 5vw, 64px) 0 32px;
+  grid-template-columns: minmax(0, 1.02fr) minmax(520px, 0.98fr);
+  gap: clamp(20px, 3vw, 40px);
+  align-items: center;
+  padding: clamp(24px, 4vw, 48px) 0 18px;
 }
 
 .section-kicker {
@@ -210,7 +210,7 @@ input {
 }
 
 .hero h1 {
-  max-width: 12ch;
+  max-width: 13.5ch;
   font-size: 4.35rem;
   line-height: 1.08;
 }
@@ -264,7 +264,7 @@ input {
 
 .hero__lead {
   max-width: 35rem;
-  margin: 22px 0 0;
+  margin: 18px 0 0;
   font-size: 1.18rem;
   line-height: 1.58;
   text-wrap: pretty;
@@ -274,38 +274,33 @@ input {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-top: 30px;
-}
-
-.hero__proof {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 24px;
-  color: var(--muted);
-  font-size: 0.95rem;
-  font-weight: 600;
-}
-
-.hero__proof p {
-  margin: 0;
-}
-
-.hero__proof-icon {
-  width: 22px;
-  height: 22px;
-  color: var(--brand);
-  flex: 0 0 auto;
+  margin-top: 22px;
 }
 
 .hero__diagram {
   min-width: 0;
-  margin-top: 31px;
+  margin-top: 10px;
   padding: 0;
   overflow: hidden;
   border: 1px solid rgba(184, 211, 218, 0.9);
   border-radius: var(--radius-shell);
   background: rgba(255, 255, 255, 0.98);
+  transform: scale(1.06);
+  transform-origin: center;
+}
+
+.hero__diagram-zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.hero__diagram-zoom:focus-visible {
+  outline: 3px solid rgba(6, 150, 165, 0.34);
+  outline-offset: -3px;
 }
 
 .diagram {
@@ -929,18 +924,15 @@ input {
     margin-top: 18px;
   }
 
-  .hero__proof {
-    margin-top: 18px;
-  }
-
   .button--ghost {
     min-height: auto;
   }
 
   .hero__diagram {
     width: calc(100% + 96px);
-    margin: -12px -48px 0;
+    margin: -2px -48px 0;
     overflow-x: auto;
+    transform: none;
   }
 
   .diagram--asset {
@@ -1018,11 +1010,6 @@ input {
   .hero h1 {
     font-size: 2.35rem;
     letter-spacing: 0;
-  }
-
-  .hero__proof {
-    align-items: flex-start;
-    font-size: 0.9rem;
   }
 
   .hero__diagram {
