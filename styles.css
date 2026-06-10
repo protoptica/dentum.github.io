@@ -199,6 +199,13 @@ input {
   color: rgba(123, 200, 214, 0.88);
 }
 
+.results-band__heading .section-kicker {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
 .hero h1,
 .section-heading h2,
 .lead-section__copy h2 {
