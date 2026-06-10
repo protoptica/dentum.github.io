@@ -602,12 +602,12 @@
         phoneInput.value = formatRuPhone(digits);
 
         if (rawDigits.length > 11 || phoneInput.dataset.tooLong === "true") {
-          setFieldError(phoneInput, "В номере должно быть 10 цифр после +7.");
+          setFieldError(phoneInput, "В номере должно быть 10 цифр после +7");
           return false;
         }
 
         if (digits.length !== 11) {
-          setFieldError(phoneInput, "Введите 10 цифр номера после +7.");
+          setFieldError(phoneInput, "Введите номер после +7");
           return false;
         }
 
@@ -622,12 +622,12 @@
         emailInput.value = value;
 
         if (!value) {
-          setFieldError(emailInput, "Введите e-mail.");
+          setFieldError(emailInput, "Введите e-mail");
           return false;
         }
 
         if (!emailPattern.test(value)) {
-          setFieldError(emailInput, "Введите корректный e-mail.");
+          setFieldError(emailInput, "Введите корректный e-mail");
           return false;
         }
 
@@ -638,7 +638,7 @@
       leadForm?.querySelectorAll("input[required]").forEach((input) => {
         input.addEventListener("input", () => {
           if (input.name === "phone") return;
-          setFieldError(input, input.value.trim() ? "" : "Заполните поле.");
+          setFieldError(input, input.value.trim() ? "" : "Заполните поле");
         });
       });
 
@@ -664,7 +664,7 @@
       leadForm?.addEventListener("submit", (event) => {
         const requiredFieldsValid = Array.from(leadForm.querySelectorAll("input[required]")).map((input) => {
           const isValid = Boolean(input.value.trim());
-          setFieldError(input, isValid ? "" : "Заполните поле.");
+          setFieldError(input, isValid ? "" : "Заполните поле");
           return isValid;
         }).every(Boolean);
         const phoneValid = validatePhone();
