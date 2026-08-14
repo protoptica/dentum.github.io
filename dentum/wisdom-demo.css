@@ -365,7 +365,7 @@ img, svg { display: block; max-width: 100%; }
   border-radius: 50%;
   cursor: pointer;
   transform: translate(-50%, -50%);
-  transition: transform 160ms ease-out, background-color 160ms ease-out;
+  transition: left 420ms cubic-bezier(0.22, 1, 0.36, 1), top 420ms cubic-bezier(0.22, 1, 0.36, 1), transform 160ms ease-out, background-color 160ms ease-out, opacity 160ms ease-out;
 }
 
 .tooth-marker::after {
@@ -381,6 +381,9 @@ img, svg { display: block; max-width: 100%; }
 .tooth-marker--48 { left: 9.5%; }
 .tooth-marker--38 { left: 90.5%; }
 .tooth-marker span { font-weight: 800; }
+.xray-stage.is-detecting .tooth-marker { opacity: 0.32; cursor: wait; }
+.tooth-marker.is-unlocated { opacity: 0.5; border-style: dashed; }
+.tooth-marker:disabled { cursor: wait; }
 
 .xray-hint {
   position: absolute;
